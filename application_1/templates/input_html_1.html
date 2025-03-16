@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}{% endblock %}
+<!--<select class="form-select" aria-label="Default select example" onchange="location=this.value;">-->
+<!--    <option selected>Open this select menu</option>-->
+<!--    <option value="https://yandex.ru">One</option>-->
+<!--    <option value="http://example.com/page1">Two</option>-->
+<!--    <option value="http://example.com/page1">Three</option>-->
+<!--</select>-->
+{% block content_1 %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label></label>
+    <div class="mb-3">
+        <input type="text" class="form-control" placeholder="x">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" placeholder="y">
+    </div>
+    <button type="submit" class="btn btn-primary">Обработать запрос</button>
+</form>
+{% endblock %}
