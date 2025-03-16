@@ -22,5 +22,8 @@ from application_1.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', request_3, name='app3')
+    path('', request_3, name='app5'),
+    path('input/', request_5, name='app4'),
+    path('database/', request_6, name='data'),
+    path('api_data/', request_7, name='api_data1')
 ]
